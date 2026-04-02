@@ -1,5 +1,4 @@
-n
-ame: Build Web Game
+name: Build Web Game
 on:
   push:
     branches:
@@ -17,6 +16,7 @@ jobs:
       - uses: actions/upload-pages-artifact@v1
         with:
           path: build/web
+          
 deploy:
     needs: build
     runs-on: ubuntu-latest
