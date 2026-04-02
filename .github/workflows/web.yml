@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: malgraty/renpy-build-action@v1
+      - uses: malgratys/renpy-build-action@v1
         with:
           project-path: .
           targets: web
