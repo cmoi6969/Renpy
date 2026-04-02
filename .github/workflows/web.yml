@@ -9,14 +9,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: malgratys/renpy-build-action@v1
+      - uses: malgraty/renpy-build-action@master
         with:
           project-path: .
           targets: web
       - uses: actions/upload-pages-artifact@v1
         with:
           path: build/web
-          
+
   deploy:
     needs: build
     runs-on: ubuntu-latest
